@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.element-example{
+    width: 50%;
+    height: 200px;
+    line-height: 200px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.first{
+    background-color: aquamarine;
+    float: right;
+}
+
+.second{
+    background-color: cornflowerblue;
+}
+
+article{
+    background-color: violet;
+    overflow: hidden;
+}
+
+p{
+    clear: left;
+}

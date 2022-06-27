@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(14, 119, 47);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1{
+    color: goldenrod;
+    margin: 15px;
+}
+
+h2{
+    color: whitesmoke;
+    margin: 15px;
+    font-style: italic;
+}
+
+button{
+    background: goldenrod;
+    color: rgb(14, 119, 47);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font: normal bold 1.25rem sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}

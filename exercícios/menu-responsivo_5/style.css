@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root{
+    --fonte1: 'Montserrat', sans-serif;
+    --fonte2: 'Titillium Web', sans-serif;
+}
+
+body{
+    font-family: var(--fonte1);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-btn{
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-btn_lines, .menu-btn_lines::before, .menu-btn_lines::after{
+    width: 1.5rem;
+    height: 2px;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_lines::before, .menu-btn_lines::after{
+    content: '';
+    position: absolute;
+}
+
+.menu-btn_lines::before{
+    transform: translateY(-0.5rem);
+}
+
+.menu-btn_lines::after{
+    transform: translateY(0.5rem);
+}
+
+.menu-btn.open .menu-btn_lines{
+    transform: translateX(2rem);
+    background-color: transparent;
+}
+
+.menu-btn.open .menu-btn_lines::before{
+    transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+}
+
+.menu-btn.open .menu-btn_lines::after{
+    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+}
+
+.menu-items{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item:hover{
+    background-color: #ccc7d3;
+}
+
+.section{
+    position: relative;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section{
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='40' viewBox='0 0 50 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M40 10L36.67 0h-2.11l3.33 10H20l-2.28 6.84L12.11 0H10l6.67 20H10l-2.28 6.84L2.11 10 5.44 0h-2.1L0 10l6.67 20-3.34 10h2.11l2.28-6.84L10 40h20l2.28-6.84L34.56 40h2.1l-3.33-10H40l2.28-6.84L47.89 40H50l-6.67-20L50 0h-2.1l-5.62 16.84L40 10zm1.23 10l-2.28-6.84L34 28h4.56l2.67-8zm-10.67 8l-2-6h-9.12l2 6h9.12zm-12.84-4.84L12.77 38h15.79l2.67-8H20l-2.28-6.84zM18.77 20H30l2.28 6.84L37.23 12H21.44l-2.67 8zm-7.33 2H16l-4.95 14.84L8.77 30l2.67-8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero-col{
+    padding: clamp(1rem, 8vh, 5rem);
+    max-width: 50%;
+}
+
+.section h1{
+    font-family: var(--fonte2);
+    font-size: 3rem;
+    line-height: 2vw;
+    color: #ccc7d3;
+    text-transform: uppercase;
+}
+
+.section h2{
+    font-size: 1rem;
+    font-family: var(--fonte2);
+    color: #5a4d70;
+    text-transform: uppercase;
+}
+
+.section p{
+    color: #5a4d70;
+    padding-right: 1rem;
+}
+
+.hero-section img{
+    width: clamp(250px, 30vw, 500px);
+    transform: scaleX(-1);
+}
+
+.custom-shape-divider-bottom-1655322276 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1655322276 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 159px;
+}
+
+.custom-shape-divider-bottom-1655322276 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.another-col{
+    width: clamp(300px, 50vw, 600px);
+}
+
+@media (max-width:1023px){
+    .hero-col{
+        max-width: 100%;
+        width: clamp(300px, 50vw, 600px);
+        padding: 0;
+    }
+
+    .hero-img{
+        display: none;
+    }
+    
+    .custom-shape-divider-bottom-1655322276 svg {
+        width: calc(150% + 1.3px);
+        height: 159px;
+    }
+
+}
+
+@media (max-width:767px){
+    .custom-shape-divider-bottom-1655322276 svg {
+        width: calc(200% + 1.3px);
+        height: 159px;
+    }
+
+    .header a{
+        font-size: 1rem;
+    }
+
+    .menu-btn{
+        display: flex;
+    }
+
+    .menu-items{
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-around;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        background: #5a4d70;
+        transform: translateX(100vw);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu-items.open{
+        transform: translateX(0);
+    }
+}

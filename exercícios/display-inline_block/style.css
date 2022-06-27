@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.example{
+    color: white;
+    text-align: justify;
+}
+
+.example::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.example-item {
+    width: 20%;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.example-item_first{
+    background-color: aquamarine;
+}
+
+.example-item_second{
+    background-color: cornflowerblue;
+}
+
+.example-item_third{
+    background-color: crimson;    
+}
+
+p{
+    text-align: justify;
+}

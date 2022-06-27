@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --fonte1: 'Roboto', sans-serif;
+    --cor1: #00c2ff
+}
+
+body{
+    background-color: white;
+    background-image: url(car-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: var(--fonte1);
+    margin:0px;
+}
+
+header{
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+nav .logo{
+    font-size: 2em;
+}
+
+nav .logo::before{
+    content: ' \26DF';
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav li a{
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.content{
+    font-size: 1.5em;
+    margin: auto 0;
+    padding: 200px;
+}
+
+.content h1{
+    color: var(--cor1);
+    margin-bottom: 0px;
+}
+
+.content p{
+    margin-bottom: 0px;
+
+}
+
+.content button{
+    height: 50px;
+    width: 200px;
+    color: white;
+    border: 0px;
+}
+
+.highlight{
+background-color: var(--cor1);
+}
+
+.selected{
+    font-weight: bolder;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer strong{
+    color:var(--cor1);
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px;
+}

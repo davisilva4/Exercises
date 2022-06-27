@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    color: white;
+}
+
+.example-item{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    caret-color: transparent;
+}
+
+.first{
+    background-color: aquamarine;
+    position: relative;
+    top: 200px;
+}
+
+.second{
+    background-color: cornflowerblue;
+    position: relative;
+    z-index: 1;
+}

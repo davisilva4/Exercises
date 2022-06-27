@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.counter{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+#count-el{
+    font-size: 3rem;
+}
+
+#increment-btn, #reset-btn, #save-btn{
+    width: 180px;
+    height: 50px;
+    background: crimson;
+    border-radius: 15px;
+    color: white;
+    font: normal bold 1.25rem sans-serif;
+    border: none;
+}
+
+#reset-btn{
+    background: cornflowerblue;
+}
+
+#save-btn{
+    background: green;
+}
+
+#previous-counts{
+    font: normal bolder 2rem sans-serif;
+}

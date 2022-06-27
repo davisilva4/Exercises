@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+
+:root{
+    --fonte1: 'Righteous', sans-serif;
+    --fonte2: 'Sarala', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: #bdd4e7 linear-gradient(145deg, #bdd4e7 0%, #8693ab 74%);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.header-img{
+    width: 80px;
+}
+
+.menu{
+    display: flex;
+    gap: 32px;
+}
+
+.menu-item{
+    text-decoration: none;
+    color: whitesmoke;
+    font: normal 400 1rem var(--fonte2);
+}
+
+.content{
+    margin-bottom: 48px;
+    border-top: 0.4px solid whitesmoke;
+}
+
+.content-main{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.content-text-title{
+    font: normal normal 3rem var(--fonte1);
+    color: whitesmoke;
+}
+
+.content-text-subtitle{
+    font: normal 400 1.25rem var(--fonte2);
+    color: whitesmoke;
+}
+
+.content-btn{
+    background: whitesmoke;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    font: normal 400 1.25rem var(--fonte2);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content-btn:hover{
+    background-color: #8693ab4e;
+}
+
+.main-img{
+    width: 250px;
+}
+
+.content-second{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.second-title{
+    border-top: 0.4px solid whitesmoke;
+    padding-top: 48px;
+    font: normal normal 1.25rem var(--fonte1);
+    color: whitesmoke;
+    margin-bottom: 16px;
+}
+
+.second-p{
+    font: normal 400 1rem var(--fonte2);
+    color: whitesmoke;
+}
+
+.footer{
+    border-top: 0.4px solid whitesmoke;
+    text-align: center;
+    font: normal 400 1.25rem var(--fonte2);
+    padding: 20px;
+}
+

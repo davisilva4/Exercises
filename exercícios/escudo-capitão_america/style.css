@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root{
+    --cor1: crimson;
+    --cor2: darkred;
+    --cor3: blue;
+    --cor4: navy;
+}
+
+.circulo{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #c3404f;
+}
+
+#circulo-fora{
+    margin: auto;
+    width: 256px;
+    height: 256px;
+    background: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor1));
+}
+
+#circulo-dentro1{
+    width: 206px;
+    height: 206px;
+    background-color: white;
+}
+
+#circulo-dentro2{
+    width: 156px;
+    height: 156px;
+    background: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor1));
+}
+
+#circulo-dentro3{
+    width: 106px;
+    height: 106px;
+    background: linear-gradient(to right, var(--cor3), var(--cor4), var(--cor3));
+}
+
+#estrela{
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid white;
+    transform: rotate(180DEG);
+}
+
+#estrela:before{
+    content: '';
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid white;
+    transform: rotate(70DEG);
+    left: -51px;
+}
+
+#estrela:after{
+    content: '';
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid white;
+    transform: rotate(-70DEG);
+    right: -50px;
+    top:0.1;
+}

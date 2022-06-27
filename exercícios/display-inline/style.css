@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.example{
+    color: white;
+    text-align: center;
+}
+
+.example-item{
+    /*width: 33.333%;
+    height: 150px;*/
+    display: inline;
+}
+
+.example-item_first{
+    background-color: aquamarine;
+}
+
+.example-item_second{
+    background-color: cornflowerblue;
+}
+
+.example-item_third{
+    background-color: crimson;
+}
+
+h3{
+    text-align: right;
+}
+

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    color: white;
+}
+
+.example-item{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    caret-color: transparent;
+}
+
+.primeira{
+    background-color: aquamarine;
+    position: absolute;
+    right: 0;
+}
+
+.segunda{
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.terceira{
+    background-color: crimson;
+    position: absolute; /*não pode ser static(a padrão), assim, o filho respeita a posição do pai*/
+}
+
+.example-item_quarta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: cyan;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
