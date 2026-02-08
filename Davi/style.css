@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p{
+    color: #70747a;
+    margin-bottom: 15px;
+}
+
+.navbar_container{
+    width: 100%;
+    height: 80px;
+    background-color: #232a31;
+    padding: 0 2rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 80px;
+    margin-top: 15px;
+}
+
+.navbar_items{
+    height: 80px;
+    line-height: 80px;
+}
+
+.navbar_items li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navbar_items li a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.32s;
+    text-transform: uppercase;
+}
+
+.navbar_items li a:hover{
+    color: #ccc;
+}
+
+.default_btn{
+    padding: 10px 15px;
+    background-color: #2cc76a;
+    border-radius: 3px;
+}
+
+.default_btn:hover{
+    background-color: #22bb5f;
+}
+
+/*Tive de colocar o endereço todo para pegar*/
+.navbar_items li .default_btn:hover{
+    color: purple;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main_banner{
+    background-image: url("photo-1611416517780-eff3a13b0359.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+    width: 100%;
+}
+
+.main_banner h1, .main_banner p{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px #000;
+}
+
+.main_banner h1{
+    font-size: 54px;
+}
+
+.main_banner p{
+    font-size: 22px;
+}
+
+.services_container{
+    padding: 5rem 0;
+}
+
+.services_container ul{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services_container ul li{
+    list-style: none;
+    flex: 1 1 200px;
+    padding: 15px;
+    margin: 0 15px;
+}
+
+.fas{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-alt{
+    color: #2cc66a;
+}
+
+.fa-rocket{
+    color: #ef3f29;
+}
+
+.fa-comments{
+    color: #eff829;
+}
+
+.services_container h3{
+    margin-bottom: 25px;
+}
+
+.services_container p{
+    line-height: 24px;
+}
+
+.pricing_container{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.pricing_container h2{
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.pricing_container p{
+    font-size: 20px;
+}
+
+
+.plans_container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.plan{
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.plan li{
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e8e9ea;
+    color: #333;
+}
+
+.plan .price{
+    display: flex;
+    line-height: 120px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    background-color: #2cc762;
+    color: #fff;
+    margin: 0 auto -50px;
+}
+
+.plan .plan_name{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202b34;
+}
+
+.plan .plan_btn{
+    background-color: #2cc762;
+    color: #fff;
+    font-size: 24px;
+    height: 75px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.plan .recommended{
+    background-color: #f45c57;
+}
+
+.search_domainContainer{
+    background-color: #34544e;
+    text-align: center;
+    justify-content: center;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.search_domainContainer h2{
+    color: #FFF;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.search_domainContainer p{
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.search_domainContainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_domainContainer form input{
+    border: none;
+    border-radius: 5px;
+}
+
+.search_domainContainer form input[type="text"]{
+    margin-bottom: 25px;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search_domainContainer form input[type="submit"]{
+    background-color: #2cc76a;
+    padding: 15px 30px;
+    
+}
