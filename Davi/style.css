@@ -255,5 +255,118 @@ nav{
 .search_domainContainer form input[type="submit"]{
     background-color: #2cc76a;
     padding: 15px 30px;
-    
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.9;
 }
+
+.search_domainContainer form input[type="submit"]:hover{
+    opacity: 1;
+}
+
+.contact_container{
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.contact_container h2{
+    font-size: 36px;
+}
+
+.contact_container p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact_container input, .contact_container textarea{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+
+.contact_container textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contact_container input[type="submit"]{
+    background-color: #2cc76a;
+    padding: 15px 30px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.contact_container input[type="submit"]:hover{
+    opacity: 1;
+}
+
+@media (max-width: 1100px){
+    .plans_container{
+        width: 95%;
+    }
+
+    .plan{
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 900px){
+    .main_banner p{
+        padding: 0 6rem;
+    }
+
+    .search_domainContainer{
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 570px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .navbar_items li{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .services_container ul{
+        flex-direction: column;
+    }
+    
+    .plans_container{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .plan{
+       width: 100%;
+       max-width: 100%;
+    }
+
+    .search_domainContainer h2{
+        font-size: 28px;
+    }
+
+    .search_domainContainer input[type="text"]{
+        width: 100%;
+    }
+
+    .contact_container{ 
+        padding: 3rem 2rem;
+    }
+
+    .contact_container input, .contact_container textarea{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
